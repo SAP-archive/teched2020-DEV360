@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# DEV360 - Explore the new capabilities of SAP Cloud Platform - Open API and CLI
 
 ## Description
 
