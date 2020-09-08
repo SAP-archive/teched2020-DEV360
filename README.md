@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2020 session called Session ID - Session Title. 
+This repository contains the material for the SAP TechEd 2020 session DEV360 - Explore the new capabilities of SAP Cloud Platform - Open API and CLI. 
 
 ## Overview
 
