@@ -6,7 +6,29 @@ This repository contains the material for the SAP TechEd 2020 session DEV360 - E
 
 ## Overview
 
-This session introduces attendees to...
+In 2020, SAP will release a new version of SAP Cloud Platform (SAP CP).
+This enhanced version represents a major milestone, as it introduces a new best-practice for supporting cloud resource management and automation through a set of new features that are currently being developed based on the feedback collected from major customer and partner stakeholders. 
+
+The main new features of SAP CP are:
+
+1. **Improved Account Structure**: a new grouping concept for subaccounts, called “directories”. Directories support the aggregation of subaccounts according to a customer’s own business and technical needs, allowing account administrators to better allocate SAP CP resources to different lines of business, departments, and teams under their domains.
+
+![Improved Account Structure](/assets/images/Overview.png)
+
+2. **Automation Support**: a new programmatic interface for all major SAP CP cockpit operations, available both as a new CLI tool for command-line scripting and as a REST API platform. The main operational categories are:
+    * Account management
+    * Entitlement management
+    * Service provisioning
+    * Multitenant service management
+    * Resource consumption
+    * Member management
+    * Role assignment
+    
+    During this exercise we will present these interfaces to you, and you will be able to try them out yourselves.
+    
+3. **Cusotm Properties**: a new concept to label or tag directories and subaccounts with custom properties and values, based on your own business and technical needs, to make organizing and filtering your directories and subaccounts easier within your global account.
+
+4. **Improved Cost and Billing Control**: detailed and exportable breakdown of service consumption and associated costs.
 
 ## Requirements
 
