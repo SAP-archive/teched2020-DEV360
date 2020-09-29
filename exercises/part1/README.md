@@ -2,7 +2,7 @@
 
 In this section, you will set up your subaccount in the SAP Cloud Platform Trial using the new CLI.
 You will perform the following steps:
-1.	View information for your global account.
+1.	View information of your global account.
 2.	Create a subaccount.
 3.	Assign entitlements to the subaccount you created.
 
@@ -14,19 +14,22 @@ In this section, you will work with the CLI for SAP Cloud Platform to get the in
 
 1. Open the [SAP Cloud Platform Trial landing page](https://cockpit.hanatrial.ondemand.com/cockpit#/home/trial).
 <br>
-    ![Trial Landing Page](/exercises/part1/images/trial_landing_page.png)
-<br>
-    <img src="/exercises/part1/images/trial_landing_page.png" alt="Trial Landing Page" width="600"/>
+<p align="center">
+<img src="/exercises/part1/images/trial_landing_page.png" alt="Trial Landing Page" width="600"/>
+</p>
 
-2. If not done already, download the CLI for SAP Cloud Platform.
+2. If not already done, download the CLI for SAP Cloud Platform.
 <br>
-    <img src="/exercises/part1/images/trial_landing_page_cli.png" alt="Download CLI" width="600"/>
-
-3. If not done already, create your Trial account.
+<p align="center">
+<img src="/exercises/part1/images/trial_landing_page_cli.png" alt="Download CLI" width="600"/>
+</p>
+3. If not already done, create your Trial account.
 <br>
-    <img src="/exercises/part1/images/trial_landing_page_enter.png" alt="Create Trial Account" width="600"/>
-    
+<p align="center">
+<img src="/exercises/part1/images/trial_landing_page_enter.png" alt="Create Trial Account" width="600"/>
+</p>
 4. In the **Windows Command Prompt (CMD)** or **Terminal** for Mac, type the following command to explore all the available commands in the CLI for SAP Cloud Platform.
+
     ```
      sapcp --help
     ```
@@ -36,27 +39,30 @@ In this section, you will work with the CLI for SAP Cloud Platform to get the in
     ```
     sapcp login --url https://cpcli.cf.<region>.hana.ondemand.com
     ```
-    Enter your **global account subdomain** (see image), **email**, and **password** when prompted.
+    Enter your **global account subdomain** (see image below), **email**, and **password** when prompted.
 <br>
-   <img src="/exercises/part1/images/ga_subdomain.png" width="500"/>
-   
-6. View the details for your global account.
+<p align="center">
+<img src="/exercises/part1/images/ga_subdomain.png" width="500"/>
+</p>
+6. View the details of your global account.
 
     ```
     sapcp get accounts/global-account
     ```
 <br>
-   <img src="/exercises/part1/images/cli_get_ga.png" width="600"/>
-
+<p align="center">
+<img src="/exercises/part1/images/cli_get_ga.png" width="600"/>
+</p>
 7. View the available regions for your global account.
 
     ```
     sapcp list accounts/available-region
     ```
 <br>
-   <img src="/exercises/part1/images/cli_list_regions.png" alt="Get Global Account Info" width="600"/>
-   
-8. View the entitlements for your global account. Note that The list will be long because your Trial global account is entitled with many services in advance, to improve the trial experience.
+<p align="center">
+<img src="/exercises/part1/images/cli_list_regions.png" alt="Get Global Account Info" width="600"/>
+</p>
+8. View the entitlements for your global account. Note that the list will be long because your Trial global account is entitled with many services in advance, to improve the trial experience.
 
     ```
     sapcp list accounts/entitlement
@@ -65,5 +71,4 @@ In this section, you will work with the CLI for SAP Cloud Platform to get the in
 
 ## Summary
 
-Now that you have ... 
-Continue to - [PART 2: GET FAMILIAR WITH THE NEW REST APIs FOR SAP CLOUD PLATFORM ](/exercises/part2/README.md)
+Now that you have familiarized yourself with the CLI for SAP Cloud Platform, proceed to - [PART 2: GET FAMILIAR WITH THE NEW REST APIs FOR SAP CLOUD PLATFORM ](/exercises/part2/README.md)
