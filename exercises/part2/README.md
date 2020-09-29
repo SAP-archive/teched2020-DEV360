@@ -1,39 +1,22 @@
-# Exercise 2 - Exercise 2 Description
+# PART 2: GET FAMILIAR WITH THE NEW REST APIs FOR SAP CLOUD PLATFORM
 
-In this exercise, we will create...
+In this part, you will familiarize yourself with the new REST APIs that are used to automate operations involving your SAP Cloud Platform account entities.
 
-## Exercise 2.1 Sub Exercise 1 Description
+You will perform the following steps:
 
-After completing these steps you will have created...
+1.	Obtain authentication information to use the REST APIs.
+2.	Try out the API to get information for all subaccounts.
+3.	Try out the API to get information about all assigned entitlements.
 
-1. Click here.
-<br>![](/exercises/part2/images/02_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+API documentation of the new Core APIs for SAP Cloud Platform is available via the popular Swagger UI interface that lets you try out the API calls directly in the browser.
 
 
+## 1. Obtain Authentication Information
 
-## Exercise 2.2 Sub Exercise 2 Description
+In this section, you will use the CLI for SAP Cloud Platform to obtain the authentication information necessary to use the SAP Cloud Platform REST APIs.
 
-After completing these steps you will have...
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
 
-```
-
-2.	Click here.
-<br>![](/exercises/part2/images/02_02_0010.png)
 
 ## Summary
 
