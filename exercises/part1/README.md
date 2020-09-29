@@ -79,7 +79,7 @@ In this section, you will work with the CLI for SAP Cloud Platform to create a s
 1. Create a new subaccount named Dev.  
    Replace the **<new_subdomain>** with a value of your choice.  
    **Note:** A subdomain can contain letters (a-z), digits (0-9), and hyphens only.  
-   Replace the **<region>** with the region of your global account (eu10 / us10).  
+   Replace the **\<region\>** with the region of your global account (eu10 / us10).  
    
 ```
 sapcp create accounts/subaccount --region <region> --display-name Dev --subdomain <new_subdomain>
@@ -95,18 +95,14 @@ sapcp list accounts/subaccount
 ```
 
 <p align="center" width="100%">
-   <img src="/exercises/part1/images/cli_get_subaccounts.png" width="70%"/>
+   <img src="/exercises/part1/images/cli_get_subaccounts.png" width="85%"/>
 </p>
 3. Copy the ID of your new subaccount and save it.  
 
-```
-sapcp list accounts/subaccount
-```
-
 <p align="center" width="100%">
-   <img src="/exercises/part1/images/cli_get_subaccounts_id.png" width="70%"/>
+   <img src="/exercises/part1/images/cli_get_subaccounts_id.png" width="85%"/>
 </p>
-4. Refresh the cockpit to see the new subaccount.
+4. Refresh the cockpit to see the new subaccount.  
 
 ## 3. Assign Entitlements to the New Subaccount
 
@@ -129,12 +125,20 @@ You will assign these services to the subaccount:
 3. Assign an entitlement to the **Cloud Management (cis)** service, **central** plan.  
    Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
    
+```
+sapcp assign accounts/entitlement --for-service cis --plan central --to-subaccount <new_subaccount_id>
+```
+   
 <p align="center" width="100%">
    <img src="/exercises/part1/images/cli_assign_cis.png" width="70%"/>
 </p>
 
 4. Assign an entitlement to **Usage Data Management (uas)** service, **reporting-ga-admin** plan.  
-Replace the **<new_subaccount_id>** with the ID of your new subaccount.
+Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
+
+```
+sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --to-subaccount <new_subaccount_id>
+```
 
 <p align="center" width="100%">
    <img src="/exercises/part1/images/cli_assign_uas.png" width="70%"/>
