@@ -26,34 +26,54 @@ The main new features of SAP CP are:
     
     During this exercise we will present these interfaces to you, and you will be able to try them out yourselves.
     
-3. **Cusotm Properties**: a new concept to label or tag directories and subaccounts with custom properties and values, based on your own business and technical needs, to make organizing and filtering your directories and subaccounts easier within your global account.
+3. **Custom Properties**: a new concept to label or tag directories and subaccounts with custom properties and values, based on your own business and technical needs, to make organizing and filtering your directories and subaccounts easier within your global account.
 
 4. **Improved Cost and Billing Control**: detailed and exportable breakdown of service consumption and associated costs.
 
-## Requirements
+### Stakeholder Roles: Best Practices For SAP Cloud Platform
 
-The requirements to follow the exercises in this repository are...
+SAP CP increasingly distinguishes between various SAP CP stakeholders, their roles, and their respective business requirements. 
+The stakeholders are divided into three main groups:
+
+1. **Business administrator and commercial contact**
+    * Signs contracts with SAP
+    * Orders services and apps from SAP
+    * Receives and reviews monthly balance statements
+    * Reviews usage and costs
+    * Rarely uses SAP CP cockpit
+    
+2. **Technical account administrator and technical contact**
+    * Manages a global account, regions, security, and so on
+    * Sets up directories, subaccounts, and roles for additional stakeholders in the company
+    * Maps service entitlements and quotas to each of these stakeholders
+    * Tracks usage dashboard
+    * Uses the CLI tools to automate procedures
+    * Subscribes business users to applications
+    * Frequently uses SAP CP cockpit
+    
+3. **Subaccount administrator and developer**
+    * Responsible for a directory or subaccount administration 
+    * Assigns user rights to other developers
+    * Uses development tools and CLI to develop and debug various applications (Git, SAP Application Studio, S/4 Cloud SDK, SAP Rapid Application Studio, MTA builder and deployer, etc.)
+    * Integrates SAP CP business services and technical resources (e.g., databases)
+    * May programmatically interact with SAP CP using the SAP CP REST APIs
+    * Uses dev, test, staging and productive subaccounts to test and to deploy applications
+    * Rarely uses SAP CP cockpit
+
+
+## Exercise Overview
+
+The purpose of this exercise is to illustrate some of the new CLI and API automation capabilities introduced in the enhanced version of SAP CP. 
+In the first part of the exercise, you will act as a technical account administrator of a new SAP CP global account. Your task is to use the CLI tools to set up the account for your development team.
+In the second, third and fourth parts of the exercise, you will ask your friend, the development guru, to explore the SAP CP REST APIs, and then to write an application to automate one of your most frequent tasks. Finally, in the fifth part of the exercise, you will retrieve the latest usage and cost information of the created accounts.
+You will use your Trial account.
+
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-
-**OR** Link to the PDF document stored in your github repo for example...
-
-Start the exercises [here](exercises/myPDFDoc.pdf).
-    
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
+- [PART 1: SETTING UP YOUR TRIAL ACCOUNT](exercises/part1/)
+- [PART 2: GET FAMILIAR WITH THE NEW REST APIs FOR SAP CLOUD PLATFORM ](exercises/part2/)
+- [PART 3: AUTOMATE SAP CLOUD PLATFORM OPERATIONS](exercises/part3/)
 
 **IMPORTANT**
 

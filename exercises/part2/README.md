@@ -7,7 +7,7 @@ In this exercise, we will create...
 After completing these steps you will have created...
 
 1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+<br>![](/exercises/part2/images/02_01_0010.png)
 
 2.	Insert this line of code.
 ```abap
@@ -33,7 +33,7 @@ READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
 ```
 
 2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+<br>![](/exercises/part2/images/02_02_0010.png)
 
 ## Summary
 
