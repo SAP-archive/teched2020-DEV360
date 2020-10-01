@@ -178,4 +178,4 @@ sapcp list accounts/entitlement -sa <new_subaccount_id>
 ## Summary
 
 Now that you have familiarized yourself with the CLI for SAP Cloud Platform, proceed to -<br/>
-[PART 2: GET FAMILIAR WITH THE NEW REST APIs FOR SAP CLOUD PLATFORM ](/exercises/part2/README.md)
+[PART 2: GET FAMILIAR WITH THE NEW REST APIs FOR SAP CLOUD PLATFORM](/exercises/part2/README.md)
