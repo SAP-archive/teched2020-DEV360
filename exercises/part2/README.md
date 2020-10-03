@@ -43,9 +43,9 @@ sapcp get services/binding -sa <new_subaccount_id>
 ```  
 
 4. Extract the values from the binding for the following parameters:  
-   •	clientid
-   •	clientsecret
-   •	url
+* clientid
+* clientsecret
+* url
    
    **Save these values** as you will need them later in the exercise. These parameters will be used to obtain the **oAuth token** required to authenticate with the SAP Cloud Platform APIs.  
    
@@ -79,7 +79,7 @@ curl -L -X POST '<url>/oauth/token' \
 ```  
 
 <p align="center" width="100%">
-   <img src="/exercises/part2/images/curl_get_token.png" width="80%"/>
+   <img src="/exercises/part2/images/curl_get_token.png" width="90%"/>
 </p>
 
 6. The **oAuth token** is the **value** of the **access_token** parameter in the response body.
@@ -95,7 +95,7 @@ curl -L -X POST '<url>/oauth/token' \
 
 <p align="center" width="100%">
    <img src="/exercises/part2/images/access_token_end.png" width="60%"/>
-</p>
+</p>  
 
 ## 2. Try Out the API for Viewing Information About Subaccounts
 
@@ -114,7 +114,7 @@ In this section, you will work with the **SAP Cloud Platform - Core Service APIs
 2. Click on the “Accounts” tile to view the APIs related to the Accounts service.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part2/images/apis_accounts.png" width="40%"/>
+   <img src="/exercises/part2/images/apis_accounts.png" width="30%"/>
 </p>  
 
 3. In the top-right corner, click on the **Authorize** button.  
@@ -130,7 +130,7 @@ In this section, you will work with the **SAP Cloud Platform - Core Service APIs
    Click on **Authorize** and **Close**.  
    
 <p align="center" width="100%">
-   <img src="/exercises/part2/images/apis_authorize.png" width="60%"/>
+   <img src="/exercises/part2/images/apis_authorize.png" width="50%"/>
 </p> 
 
 5. In case the authorization failed, make sure you copied the correct value of the "access_token" and that you didn’t include the "token_type" value (see first section, step 6).  
@@ -148,7 +148,7 @@ In this section, you will work with the **SAP Cloud Platform - Core Service APIs
 </p> 
 
 <p align="center" width="100%">
-   <img src="/exercises/part2/images/apis_execute.png" width="30%"/>
+   <img src="/exercises/part2/images/apis_execute.png" width="10%"/>
 </p> 
 
 8. The results are presented in the **response body**.  
@@ -165,13 +165,13 @@ In this section, you will work with the **SAP Cloud Platform - Core Service APIs
 1. Go back to the **SAP Cloud Platform - Core Service APIs** home page, click on the “Entitlements” tile to view the APIs related to the Entitlements service.  
  
  <p align="center" width="100%">
-    <img src="/exercises/part2/images/apis_entitlements.png" width="40%"/>
+    <img src="/exercises/part2/images/apis_entitlements.png" width="30%"/>
  </p>  
  
 2. Get authorized again (see steps 3 and 4 in the previous section).  
  
  <p align="center" width="100%">
-    <img src="/exercises/part2/images/apis_authorize.png" width="60%"/>
+    <img src="/exercises/part2/images/apis_authorize.png" width="50%"/>
  </p>  
  
 3. Open the **Manage Assigned Entitlements** section and the **GET /entitlements/v1/globalAccountAssignments** API.  
