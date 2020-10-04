@@ -93,6 +93,7 @@ Example:
 <p align="center" width="100%">
   <img src="/exercises/part3/images/constants_filled.png" width="60%"/>
 </p>  
+  
 
 ## 2. Automate Directory Creation
 
@@ -149,7 +150,7 @@ return directory;
 8. The required parameters are marked with red asterisk.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/payload_model_tab.png" width="60%"/>
+  <img src="/exercises/part3/images/payload_model_tab_open.png" width="60%"/>
 </p>  
 
 9. **Your createDirectory() function is now ready!**  
@@ -283,9 +284,9 @@ await entitleSubaccount(subaccount3, {
 
 2. Implement the **entitleSubaccount()** function.  
 Locate the function in the server.js file, copy the below code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT ENTITLEMENT HERE”.  
-This function executes a PUT request to SAP Cloud Platform to start an async operation that assigns the two following service plans to every subaccount:
-1.	Application Runtime's "MEMORY" plan.
-2.	Document Translation’s "trial" plan.  
+This function executes a PUT request to SAP Cloud Platform to start an async operation that assigns the two following service plans to every subaccount:  
+* Application Runtime's "MEMORY" plan.
+* Document Translation’s "trial" plan.  
 The requested service plans and their respective amounts are specified in the request body.  
 Since this operation is asynchronous, we shall use the pollForCompletion() function to periodically check its status.  
 
