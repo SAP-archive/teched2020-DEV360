@@ -128,11 +128,11 @@ Click **Save**.
 Enter the desired **sourceLanguage** and **targetLanguage** and browse for a file to be translated (for example a .docx file).  
 Choose **Execute**.  
 From the result choose **Download file** to see the translated file.  
-**Note:** the **Document Translation** service meter the usage of their service based on the **number of translated characters**.  
-
+**Note:** the **Document Translation** service meter the usage of their service based on the **number of translated characters**.    
+  
 ## 3. Try Out the API to View the Usage of your Global Account
 
-In this section, you will work with the SAP Cloud Platform - Core Service APIs (based on Swagger) and view the usage of your global account.  
+In this section, you will work with the **SAP Cloud Platform - Core Service APIs** (based on Swagger) and view the usage of your global account.  
 **NOTE: It usually takes 1-2 days until the usage is returned in the API and shown in the cockpit.**  
 
 1. Execute the following cURL command in the Windows command prompt (CMD), or Terminal for Mac OS.  
