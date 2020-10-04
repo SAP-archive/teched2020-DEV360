@@ -207,7 +207,7 @@ Click on **Authorize** and **Close**.
 8. Click on the **Try it out** button to execute the API and to get the **monthly usage of your global account**.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part5/images/resource_consumption_try_it_out.png" width="60%"/>
+  <img src="/exercises/part5/images/resource_consumption_try_it_out.png" width="30%"/>
 </p>  
 
 9. Fill the **fromDate** and **toDate** parameters in the following format: YYYYMM, e.g., 202012 for December (12) 2020.  
