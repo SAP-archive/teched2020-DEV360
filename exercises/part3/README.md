@@ -287,8 +287,9 @@ Locate the function in the server.js file, copy the below code snippet, and past
 This function executes a PUT request to SAP Cloud Platform to start an async operation that assigns the two following service plans to every subaccount:  
 * Application Runtime's "MEMORY" plan.
 * Document Translation’s "trial" plan.  
+
 The requested service plans and their respective amounts are specified in the request body.  
-Since this operation is asynchronous, we shall use the pollForCompletion() function to periodically check its status.  
+Since this operation is asynchronous, we use the pollForCompletion() function to periodically check its status.  
 
 Copy the following code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT ENTITLEMENT HERE”.  
 
