@@ -19,7 +19,7 @@ Replace the **\<new_subaccount_id\>** with the ID of your new subaccount.
 sapcp create services/instance -sa <new_subaccount_id>
 ```  
 
-2. Create a **Binding**. 
+2. Create a **Binding**.  
 Bindings generate credentials to use service instances.  
 Replace the **\<new_subaccount_id\>** with the ID of your subaccount.  
 **Note:** uas-binding is the name for the binding.  
@@ -64,7 +64,7 @@ In this section, you will use the SAP Cloud Platform cockpit to create usage for
 2. Locate the **Document Translation** service and click on the 3 dots menu button to create an instance.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part5/images/document_translation_create_instance.png" width="60%"/>
+   <img src="/exercises/part5/images/document_translation_create_instance.png" width="40%"/>
 </p>  
 
 3. In the **New Instance** dialog, choose **Other** as **Runtime Environment**, enter a name for the instance, and click **Create Instance**.  
@@ -76,25 +76,25 @@ In this section, you will use the SAP Cloud Platform cockpit to create usage for
 4. In the **Success** popup dialog, choose **View Instance**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part5/images/view_instance.png" width="60%"/>
+   <img src="/exercises/part5/images/view_instance.png" width="40%"/>
 </p>  
 
 5. On the right-hand side, click on the 3 dots menu button and choose **Create Binding**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part5/images/document_translation_create_binding.png" width="60%"/>
+   <img src="/exercises/part5/images/document_translation_create_binding.png" width="50%"/>
 </p>  
 
 6. In the **New Binding** dialog, enter a name for the binding and click **Create**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part5/images/document_translation_new_binding_dialog.png" width="60%"/>
+   <img src="/exercises/part5/images/document_translation_new_binding_dialog.png" width="40%"/>
 </p>  
 
 7. Click on the new binding’s 3 dots menu button and choose **View**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part5/images/view_binding.png" width="60%"/>
+   <img src="/exercises/part5/images/view_binding.png" width="40%"/>
 </p>  
 
 8. From the opened dialog, save the following properties:  
@@ -118,14 +118,14 @@ Click **Save**.
    <img src="/exercises/part5/images/save_environment.png" width="60%"/>
 </p>  
 
-11. In the POST /translation request, click on the **Try out** button.  
+11. In the **POST /translation** request, click on the **Try out** button.  
 
 <p align="center" width="100%">
    <img src="/exercises/part5/images/Try_out.png" width="60%"/>
 </p>  
 
 12. Now you will try out the API that translates a file.  
-Enter the desired **sourceLanguage** and **targetLanguage** and browse for a file that should be translated (for example a .docx file).  
+Enter the desired **sourceLanguage** and **targetLanguage** and browse for a file to be translated (for example a .docx file).  
 Choose **Execute**.  
 From the result choose **Download file** to see the translated file.  
 **Note:** the **Document Translation** service meter the usage of their service based on the **number of translated characters**.  
@@ -133,7 +133,7 @@ From the result choose **Download file** to see the translated file.
 ## 3. Try Out the API to View the Usage of your Global Account
 
 In this section, you will work with the SAP Cloud Platform - Core Service APIs (based on Swagger) and view the usage of your global account.  
-**NOTE:** It usually takes 1-2 days until the usage is returned in the API and shown in the cockpit.  
+**NOTE: It usually takes 1-2 days until the usage is returned in the API and shown in the cockpit.**  
 
 1. Execute the following cURL command in the Windows command prompt (CMD), or Terminal for Mac OS.  
 **Note:** replace **\<clientid\>**, **\<clientsecret\>** and **\<url\>** with the values you obtained in this part, section 1, step 4.  
@@ -159,7 +159,7 @@ curl -L -X POST '<url>/oauth/token' \
 ```  
 
 <p align="center" width="100%">
-   <img src="/exercises/part5/images/curl_get_token.png" width="60%"/>
+   <img src="/exercises/part5/images/curl_get_token.png" width="80%"/>
 </p>  
 
 2. The **oAuth token** is the **value** of the **access_token** parameter in the response body.  
@@ -183,7 +183,7 @@ curl -L -X POST '<url>/oauth/token' \
 4. In the top-right corner, click on the **Authorize** button.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part5/images/resource_consumption_autorize.png" width="60%"/>
+  <img src="/exercises/part5/images/resource_consumption_autorize.png" width="50%"/>
 </p>  
 
 5. Enter the following information:    
@@ -207,7 +207,7 @@ Click on **Authorize** and **Close**.
 8. Click on the **Try it out** button to execute the API and to get the **monthly usage of your global account**.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part5/images/Try_out.png" width="60%"/>
+  <img src="/exercises/part5/images/resource_consumption_try_it_out.png" width="60%"/>
 </p>  
 
 9. Fill the **fromDate** and **toDate** parameters in the following format: YYYYMM, e.g., 202012 for December (12) 2020.  
