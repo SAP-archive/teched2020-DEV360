@@ -3,7 +3,7 @@
 In this section, you will use the new application in a production scenario where a new R&D project requires the setup in the SAP Cloud Platform environment, according to the company’s guidelines.  
 
 1. In the application, enter the name of the directory that you’d like to create in your trial account.  
-Click **Let's Go!**.  
+Click **Let's Go!**  
 Behind the scenes: This also results in the execution of the code you have implemented, and will create the directory with the 3 subaccounts in it.  
 Each of the subaccounts will have its own entitlements and custom properties.  
 
