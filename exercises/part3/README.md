@@ -45,25 +45,25 @@ In this section, you will set up your workspace on SAP Business Application Stud
 2. Create a new Dev Space of type **Basic**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part3/images/create_space.png" width="60%"/>
+   <img src="/exercises/part3/images/create_space.png" width="30%"/>
 </p>  
 
 3. Wait for the status to be RUNNING and then click on the name of the space to open it.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part3/images/space_running.png" width="60%"/>
+   <img src="/exercises/part3/images/space_running.png" width="50%"/>
 </p>  
 
 4. Click on **Open Workspace**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part3/images/open_workspace.png" width="60%"/>
+   <img src="/exercises/part3/images/open_workspace.png" width="40%"/>
 </p>  
 
 5. Click **Open**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part3/images/open.png" width="60%"/>
+   <img src="/exercises/part3/images/open.png" width="40%"/>
 </p>  
 
 6. To use the starter application, you need to add it to your workspace.  
@@ -71,13 +71,13 @@ Download the “cei-demo-master” folder from [here](https://sap-my.sharepoint.
 **Drag and drop** the "cei-demo-master" folder to your SAP Business Application Studio workspace.
   
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/cei_demo_master.png" width="60%"/>
+  <img src="/exercises/part3/images/cei_demo_master.png" width="40%"/>
 </p>  
 
 7. Open the **server.js** file, located in the cei-demo-master folder.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/server_file.png" width="60%"/>
+  <img src="/exercises/part3/images/server_file.png" width="40%"/>
 </p>  
 
 8. Locate the set of the configuration constants.  
@@ -101,14 +101,14 @@ In this section, you will implement the “createDirectory()” function which w
 1. In the server.js file, copy the following code snippet to the "/submit" endpoint handler, instead of the entire comment "PLACE YOUR CODE HERE".  
 This code retrieves the **oAuth token** that is used to authenticate to SAP Cloud Platform.  
 
-```
+```javascript
 token = await getAccessToken();
 ```  
 
 2. Copy and paste the following function call **after** the call to getAccessToken().  
 The directory name is given as an input from the UI, and the description is provided in the second parameter.  
 
-```
+```javascript
 let directory = await createDirectory(name, "TechEd Directory");
 ```  
 
@@ -119,20 +119,17 @@ let directory = await createDirectory(name, "TechEd Directory");
 </p>  
 
 4. Now we need to implement the **createDirectory()** function.  
-Locate it in the file, copy the following snippet marked in bold, and paste it to the location: “PLACE CODE FOR DIRECTORY CREATION HERE”.  
-**Note:** Copy only the **content of the function**.  
+Locate it in the file, copy the following snippet, and paste it to the location: “PLACE CODE FOR DIRECTORY CREATION HERE”.  
 
-```
-async function createDirectory(name, description) {
-    let response = await request('POST',
-        `${ACCOUNTS_SERVICE_URL}<CREATE-DIRECTORY URL>`, {},
-        {
-           displayName: name,
-           description: description
-        });
-    let directory = response.body;
-    return directory;
-}
+```javascript
+let response = await request('POST',
+    `${ACCOUNTS_SERVICE_URL}<CREATE-DIRECTORY URL>`, {},
+    {
+       displayName: name,
+       description: description
+    });
+let directory = response.body;
+return directory;
 ```  
 
 5. Back in the [SAP Cloud Platform - Core Service APIs](https://accounts-service.cfapps.eu10.hana.ondemand.com/swagger-index.html), in the **Accounts** service tile, open the **Directory Operations** group and locate the URL endpoint used to create a directory.  
@@ -144,6 +141,10 @@ async function createDirectory(name, description) {
 6. Copy the URL and paste it instead of the following placeholder: **\<CREATE-DIRECTORY URL\>** in the createDirectory() function.  
 
 7. To get detailed explanations about the required body parameters, click on the **Model** tab in the **Parameters** section.  
+
+<p align="center" width="100%">
+  <img src="/exercises/part3/images/payload_model_tab.png" width="60%"/>
+</p>  
 
 8. The required parameters are marked with red asterisk.  
 
@@ -164,7 +165,7 @@ In this section, you will create 3 subaccounts in the directory, by implementing
 1. Copy and paste these 3 function calls into the "/submit" endpoint handler, after the call to createDirectory().  
 These calls will eventually create 3 subaccounts in the directory, each subaccount with its own name, description and a custom property marking the development stage (development / test / production).  
 
-```
+```javascript
 let subaccount1 = await createSubaccountInDirectory(directory, {
     region: REGION_KEY,
     subdomain: "devsa",
@@ -197,7 +198,7 @@ let subaccount3 = await createSubaccountInDirectory(directory, {
 </p>  
 
 3. In this step we will implement the **createSubaccountInDirectory()** function.  
-Locate it in the code, copy the following code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT CREATION HERE”.  
+Locate it in the code, copy the code snippet below, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT CREATION HERE”.  
 This function executes a POST request to SAP Cloud Platform to start an async job for creating a new subaccount in a directory.  
 The directory’s GUID is being provided as value for the “parentGUID” parameter.  
 The "region" parameter defines in which region the subaccount is created.  
@@ -210,7 +211,9 @@ Creating a subaccount may take several seconds.
 During the creation process, the status of the async operation will be "In Progress".  
 Upon completion, the status will be either "Completed" or "Failed".  
 
-```
+Copy the following code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT CREATION HERE”.
+
+```javascript
 let response = await request('POST',
     `${ACCOUNTS_SERVICE_URL}<CREATE-SUBACCOUNT URL>`, {},
     {
@@ -236,10 +239,10 @@ log(`Subaccount creation operation COMPLETED`);
 return subaccount;
 ```  
 
-4. Back in the **SAP Cloud Platform - Core Service APIs** home page, in the **Accounts** service tile, open the **Subaccount Operations** group and locate the API’s URL endpoint to create a subaccount.  
+4. Back in the [SAP Cloud Platform - Core Service APIs](https://accounts-service.cfapps.eu10.hana.ondemand.com/swagger-index.html), in the **Accounts** service tile, open the **Subaccount Operations** group and locate the API’s URL endpoint to create a subaccount.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/create_subaccounts_url.png" width="60%"/>
+  <img src="/exercises/part3/images/create_subaccount_url.png" width="60%"/>
 </p>  
 
 5. Copy the URL and paste it instead of the following place holder: **\<CREATE-SUBACCOUNT URL\>** in the **createSubaccountInDirectory()** function code.  
@@ -247,7 +250,7 @@ return subaccount;
 6. The "createSubaccountInDirectory()" function should be in the following format:  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/create_subaccount_function.png" width="60%"/>
+  <img src="/exercises/part3/images/create_subaccount_function.png" width="70%"/>
 </p>  
 
 ## 4. Automate Entitlements Assignment
@@ -258,9 +261,7 @@ Each service can have one or more plans, and these plans need to be assigned to 
 In this section, you will implement the “entitleSubaccount()” function to assign entitlements to each subaccount that you’ve created.  
 
 1. Copy and paste these 3 function calls into the "/submit" endpoint handler, after the call to create the third subaccount in a directory.  
-  
 These calls will entitle the 3 subaccounts to the **Application Runtime**, and **Document Translation** services.  
-  
 **Remember:** Initially our trial subaccount was entitled with **4 units** of Application Runtime, MEMORY plan. Then we assigned trial with 0 units and our new subaccount with 1 unit. This leaves us with 3 units to assign to our dev, test and prod subaccounts.  
 
 ```javascript
@@ -281,16 +282,14 @@ await entitleSubaccount(subaccount3, {
 ```  
 
 2. Implement the **entitleSubaccount()** function.  
-  
-Locate the function in the server.js file, copy the following snippet of its content, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT ENTITLEMENT HERE”.  
-  
+Locate the function in the server.js file, copy the below code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT ENTITLEMENT HERE”.  
 This function executes a PUT request to SAP Cloud Platform to start an async operation that assigns the two following service plans to every subaccount:
 1.	Application Runtime's "MEMORY" plan.
 2.	Document Translation’s "trial" plan.  
-  
 The requested service plans and their respective amounts are specified in the request body.  
-  
 Since this operation is asynchronous, we shall use the pollForCompletion() function to periodically check its status.  
+
+Copy the following code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT ENTITLEMENT HERE”.  
 
 ```javascript
 response = await request('PUT',
@@ -327,11 +326,11 @@ log(`Entitlement job COMPLETED`);
 4. The relevant code in the "/submit" endpoint handler should be in the following format:  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/create_subaccounts_calls.png" width="60%"/>
+  <img src="/exercises/part3/images/create_subaccounts_calls.png" width="50%"/>
 </p>  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/entitle_subaccount_calls.png" width="60%"/>
+  <img src="/exercises/part3/images/entitle_subaccount_calls.png" width="40%"/>
 </p>  
 
 ## 5. Run the Application
@@ -342,7 +341,7 @@ In this section, you will run the application with the SAP Business Application 
 Right-click on the **"cei-demo-master"** folder and choose **Open in Terminal**.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/open_in_terminal.png" width="60%"/>
+  <img src="/exercises/part3/images/open_in_terminal.png" width="40%"/>
 </p>  
 
 2. In the Terminal, execute the following command:  
@@ -352,13 +351,13 @@ npm install
 ```  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/npm_install.png" width="60%"/>
+  <img src="/exercises/part3/images/npm_install.png" width="40%"/>
 </p>  
 
 3. You will see the following screen once the command has been successfully executed.  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/npm_install_done.png" width="60%"/>
+  <img src="/exercises/part3/images/npm_install_done.png" width="40%"/>
 </p>  
 
 4. Execute this command to run the application.  
@@ -368,7 +367,7 @@ npm start
 ```  
 
 <p align="center" width="100%">
-  <img src="/exercises/part3/images/npm_start.png" width="60%"/>
+  <img src="/exercises/part3/images/npm_start.png" width="40%"/>
 </p>  
 
 5. Click on the **Expose and Open** button to open the application in a new browser tab.  
@@ -384,7 +383,6 @@ npm start
 </p>  
 
 7. **Your application is running!**  
-  
 Proceed to Part 4 to use it in a productive scenario.  
 
 <p align="center" width="100%">
@@ -394,6 +392,5 @@ Proceed to Part 4 to use it in a productive scenario.
 
 ## Summary
 
-Now that you have successfully created an application that automates the process of generating and configuring accounts on the SAP Cloud Platform,  
-proceed to - [PART 4: USE THE NEW APPLICATION IN A PRODUCTION SCENARIO](/exercises/part4/README.md)
+Now that you have successfully created an application that automates the process of generating and configuring accounts on the SAP Cloud Platform, proceed to - [PART 4: USE THE NEW APPLICATION IN A PRODUCTION SCENARIO](/exercises/part4/README.md)
 
