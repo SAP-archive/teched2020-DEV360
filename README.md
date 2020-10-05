@@ -6,7 +6,7 @@ This repository contains the material for the SAP TechEd 2020 session DEV360 - E
 
 ## Overview
 
-In 2020, SAP will release a new version of SAP Cloud Platform (SAP CP).
+In 2020, SAP released a new version of SAP Cloud Platform (SAP CP).
 This enhanced version represents a major milestone, as it introduces a new best-practice for supporting cloud resource management and automation through a set of new features that are currently being developed based on the feedback collected from major customer and partner stakeholders. 
 
 The main new features of SAP CP are:
