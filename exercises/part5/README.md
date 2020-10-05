@@ -128,7 +128,7 @@ Click **Save**.
 Enter the desired **sourceLanguage** and **targetLanguage** and browse for a file to be translated (for example a .docx file).  
 Choose **Execute**.  
 From the result choose **Download file** to see the translated file.  
-**Note:** the **Document Translation** service meter the usage of their service based on the **number of translated characters**.    
+**Note:** the **Document Translation** service measures the usage of their service based on the **number of translated characters**.    
   
 ## 3. Try Out the API to View the Usage of your Global Account
 
@@ -196,7 +196,7 @@ Click on **Authorize** and **Close**.
   <img src="/exercises/part5/images/apis_authorize.png" width="50%"/>
 </p> 
    
-6. In case the authorization failed, make sure you copied the correct value of the "access_token" and that you didn’t include the "token_type" value (see step 2).  
+6. In case you failed to get authorization, make sure you copied the correct value of the "access_token" and that you didn’t include the "token_type" value (see step 2).  
 
 7. Open the **Usage and Cost Management** section and the **GET /reports/v1/monthlyUsage** API.  
 
@@ -210,7 +210,7 @@ Click on **Authorize** and **Close**.
   <img src="/exercises/part5/images/resource_consumption_try_it_out.png" width="30%"/>
 </p>  
 
-9. Fill the **fromDate** and **toDate** parameters in the following format: YYYYMM, e.g., 202012 for December (12) 2020.  
+9. Fill in the **fromDate** and **toDate** parameters in the following format: YYYYMM, e.g., 202012 for December (12) 2020.  
 Click **Execute**.  
 
 <p align="center" width="100%">
