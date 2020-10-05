@@ -81,7 +81,7 @@ Download the “cei-demo-master” folder from [here](https://sap-my.sharepoint.
 </p>  
 
 8. Locate the set of the configuration constants.  
-Fill in the values for the **CLIENT_ID**, **CLIENT_SECRET**, and **AUTHENTICATION_URL** using the values obtained from the Binding (Part 2, Section 1, Step 4).  
+Fill in the values for the **CLIENT_ID**, **CLIENT_SECRET**, and **AUTH_URL** using the values obtained from the Binding (Part 2, Section 1, Step 4).  
 Fill in the values for the **USER_EMAIL** and **PASSWORD** with your SAP CP credentials.  
 Fill in the values for the **REGION** with the region of your Trial account (eu10 / us10). Make sure you fill it in **all 3 locations**.  
 
@@ -203,14 +203,14 @@ Locate it in the code, copy the code snippet below, and paste it instead of the 
 This function executes a POST request to SAP Cloud Platform to start an async job for creating a new subaccount in a directory.  
 The directory’s GUID is being provided as value for the “parentGUID” parameter.  
 The "region" parameter defines in which region the subaccount is created.  
-The “customProperties” contain a key called “devStage”, indicating in which development stage the subaccount is in. The possible dev stages are:  
+The “customProperties” contains a key called “devStage”, indicating in which development stage the subaccount is in. The possible dev stages are:  
 * development
 * test
 * production  
 
 Creating a subaccount may take several seconds.  
 During the creation process, the status of the async operation will be "In Progress".  
-Upon completion, the status will be either "Completed" or "Failed".  
+Upon completion, the status will be either "COMPLETED" or "FAILED".  
 
 Copy the following code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT CREATION HERE”.
 
