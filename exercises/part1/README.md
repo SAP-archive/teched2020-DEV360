@@ -128,7 +128,7 @@ You will assign these services to the subaccount:
    Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
    
 ```
-sapcp assign accounts/entitlement --for-service cis --plan central --to-subaccount <new_subaccount_id>
+sapcp assign accounts/entitlement --for-service cis --plan central --enable --to-subaccount <new_subaccount_id>
 ```
    
 <p align="center" width="100%">
@@ -139,7 +139,7 @@ sapcp assign accounts/entitlement --for-service cis --plan central --to-subaccou
 Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
 
 ```
-sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --to-subaccount <new_subaccount_id>
+sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --enable --to-subaccount <new_subaccount_id>
 ```
 
 <p align="center" width="100%">
