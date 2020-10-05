@@ -146,7 +146,7 @@ sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --
    <img src="/exercises/part1/images/cli_assign_uas.png" width="70%"/>
 </p>
 
-5. Next is to assign an entitlement to the **Application Runtime** service.  
+5. Next step is to assign an entitlement to the **Application Runtime** service.  
 For this, you first need to free the quota assigned to the *“trial”* subaccount, which gets all the quota assigned to it by default (4 units).  
 Locate the subaccount ID of the *“trial”* subaccount which can be derived in multiple ways, one of them is via the “info” button in the cockpit.
 
