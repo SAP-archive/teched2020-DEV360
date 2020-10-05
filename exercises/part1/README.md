@@ -17,7 +17,9 @@ In this section, you will work with the CLI for SAP Cloud Platform to get the in
    <img src="/exercises/part1/images/trial_landing_page.png" alt="Trial Landing Page" width="600"/>
 </p>
 
-2. If not already done, download the CLI for SAP Cloud Platform.  
+2. If not already done, download the CLI for SAP Cloud Platform (latest version for your operating system).  
+Unpack the archive and copy the client file (for example, sapcp.exe) to your local system.  
+Open the directory with the client file in the **Windows Command Prompt (CMD)** or **Terminal** for Mac.  
 
 <p align="center" width="100%">
    <img src="/exercises/part1/images/trial_landing_page_cli.png" width="60%"/>
