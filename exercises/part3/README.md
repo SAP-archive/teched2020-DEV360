@@ -263,7 +263,7 @@ In this section, you will implement the “entitleSubaccount()” function to as
 
 1. Copy and paste these 3 function calls into the "/submit" endpoint handler, after the call to create the third subaccount in a directory.  
 These calls will entitle the 3 subaccounts to the **Application Runtime**, and **Document Translation** services.  
-**Remember:** Initially our trial subaccount was entitled with **4 units** of Application Runtime, MEMORY plan. Then we assigned trial with 0 units and our new subaccount with 1 unit. This leaves us with 3 units to assign to our dev, test and prod subaccounts.  
+**Remember:** Initially our trial subaccount was entitled with **4 units** of Application Runtime, MEMORY plan. Then we assigned trial with 0 units. This leaves us with 3 units to assign to our dev, test and prod subaccounts.  
 
 ```javascript
 await entitleSubaccount(subaccount1, {
@@ -277,7 +277,7 @@ await entitleSubaccount(subaccount2, {
 });
 
 await entitleSubaccount(subaccount3, {
-    appRuntime: 1,
+    appRuntime: 2,
     documentTranslation: true
 });
 ```  
