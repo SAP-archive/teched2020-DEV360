@@ -145,7 +145,21 @@ sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --
    <img src="/exercises/part1/images/cli_assign_uas.png" width="70%"/>
 </p>  
 
-5. Execute the following command to verify the entitlements were successfully assigned.  
+5. Free the quota of the **Application Runtime** service assigned to the *“trial”* subaccount, which gets all the quota assigned to it by default (4 units).  
+This is required for PART 3 of this exercise.  
+Locate the subaccount ID of the *“trial”* subaccount which can be derived in multiple ways, one of them is via the “info” button in the cockpit.  
+
+<p align="center" width="100%">
+   <img src="/exercises/part1/images/cockpit_get_subaccount_id.png" width="60%"/>
+</p>  
+
+6. Replace the **<trial_subaccount_id>** with the ID of your *“trial”* subaccount, and assign 0 units to it.  
+
+```
+sapcp assign accounts/entitlement --for-service APPLICATION_RUNTIME --plan MEMORY --amount 0 --to-subaccount <trial_subaccount_id>
+```
+
+7. Execute the following command to verify the entitlements were successfully assigned.  
 Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
 
 ```
