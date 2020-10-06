@@ -111,7 +111,6 @@ sapcp list accounts/subaccount
 In this section, you will work with the CLI for SAP Cloud Platform to assign service entitlements to your new subaccount.  
   
 You will assign these services to the subaccount:
-* **Application Runtime (APPLICATION_RUNTIME)**: Enables the deployment of applications in the SAP Cloud Platform, Cloud Foundry environment, such as the application you will develop as part of this exercise.
 * **Cloud Management (cis)**: Manages SAP CP core entities such as accounts and entitlements. Assigning entitlements to CIS allows access to the SAP CP APIs.
 * **Usage Data Management (uas)**: Gathers, stores, and exposes usage information for services and applications in all regions in a cloud deployment, for the purpose of central analysis, reporting, and license auditing.  
   
@@ -144,37 +143,16 @@ sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --
 
 <p align="center" width="100%">
    <img src="/exercises/part1/images/cli_assign_uas.png" width="70%"/>
-</p>
+</p>  
 
-5. Next step is to assign an entitlement to the **Application Runtime** service.  
-For this, you first need to free the quota assigned to the *“trial”* subaccount, which gets all the quota assigned to it by default (4 units).  
-Locate the subaccount ID of the *“trial”* subaccount which can be derived in multiple ways, one of them is via the “info” button in the cockpit.
-
-<p align="center" width="100%">
-   <img src="/exercises/part1/images/cockpit_get_subaccount_id.png" width="60%"/>
-</p>
-
-6. Replace the **<trial_subaccount_id>** with the ID of your *“trial”* subaccount, and assign 0 units to it.  
-
-```
-sapcp assign accounts/entitlement --for-service APPLICATION_RUNTIME --plan MEMORY --amount 0 --to-subaccount <trial_subaccount_id>
-```
-
-7. Assign an entitlement to the **Application Runtime (APPLICATION_RUNTIME)** service, **MEMORY** plan.  
-Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
-
-```
-sapcp assign accounts/entitlement --for-service APPLICATION_RUNTIME --plan MEMORY --amount 1 --to-subaccount <new_subaccount_id>
-```
-
-8. Execute the following command to verify the entitlements were successfully assigned.  
+5. Execute the following command to verify the entitlements were successfully assigned.  
 Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
 
 ```
 sapcp list accounts/entitlement -sa <new_subaccount_id>
 ```
 
-9. Refresh the **Entity Assignments** screen in the cockpit to view the new assigned entitlements.
+6. Refresh the **Entity Assignments** screen in the cockpit to view the new assigned entitlements.
 
 
 ## Summary
