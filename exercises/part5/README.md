@@ -53,9 +53,10 @@ sapcp get services/binding -sa <new_subaccount_id>
 
 The **Document Translation** service, **trial** plan, provides an API that allows you to translate documents of various formats into multiple languages.  
 In this section, you will use the SAP Cloud Platform cockpit to create usage for this service, that will later be retrieved using the API.  
+**Note:** the **Document Translation** service, **trial** plan, is offered on **EU10 region only**, so you must use a subaccount on EU10. If you don't have one, create it.
 
-1. Back in the cockpit, enter the trial* subaccount (that is created by default), and enter the **Services > Service Marketplace**.  
-*If you prefer to use a different subaccount, make sure it is assigned with quota of the Document Translation service.  
+1. Back in the cockpit, choose any subaccount on the EU10 region, and verify it is assigned with quota of the **Document Translation** service, **trial** plan.  
+Enter the subaccount, and the **Services > Service Marketplace**.    
 
 <p align="center" width="100%">
    <img src="/exercises/part5/images/cockpit_marketplace.png" width="60%"/>
