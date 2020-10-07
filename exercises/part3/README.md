@@ -42,7 +42,10 @@ In this section, you will set up your workspace on SAP Business Application Stud
    <img src="/exercises/part3/images/trial_landing_page_bas.png" width="60%"/>
 </p>  
 
+If prompted with this screen, click **OK**.
+
 2. Create a new Dev Space of type **Basic**.  
+Enter a name for your space. There's no need to select any extension.
 
 <p align="center" width="100%">
    <img src="/exercises/part3/images/create_space.png" width="30%"/>
@@ -68,7 +71,8 @@ In this section, you will set up your workspace on SAP Business Application Stud
 
 6. To use the starter application, you need to add it to your workspace.  
 Download the “cei-demo-master” folder from [here](https://sap-my.sharepoint.com/:f:/p/michal_keidar/EpmsN58JG-5KlfCMf0ql7XsBxpgJEYq9YGGIhIVPVOJa2A?e=HuO3Fl).  
-**Drag and drop** the "cei-demo-master" folder to your SAP Business Application Studio workspace.
+**Drag and drop** the "cei-demo-master" folder to your SAP Business Application Studio workspace.  
+If for any reason, dragging and dropping the folder doesn't work for you, import them manually to your workspace.  
   
 <p align="center" width="100%">
   <img src="/exercises/part3/images/cei_demo_master.png" width="40%"/>
@@ -84,6 +88,7 @@ Download the “cei-demo-master” folder from [here](https://sap-my.sharepoint.
 Fill in the values for the **CLIENT_ID**, **CLIENT_SECRET**, and **AUTH_URL** using the values obtained from the Binding (Part 2, Section 1, Step 4).  
 Fill in the values for the **USER_EMAIL** and **PASSWORD** with your SAP CP credentials.  
 Fill in the values for the **REGION** with the region of your Trial account (eu10 / us10). Make sure you fill it in **all 3 locations**.  
+**Save your changes**.  
 
 <p align="center" width="100%">
   <img src="/exercises/part3/images/constants_empty.png" width="60%"/>
@@ -132,6 +137,8 @@ let response = await request('POST',
 let directory = response.body;
 return directory;
 ```  
+
+**Save your changes**.  
 
 5. Back in the [SAP Cloud Platform - Core Service APIs](https://accounts-service.cfapps.eu10.hana.ondemand.com/swagger-index.html), in the **Accounts** service tile, open the **Directory Operations** group and locate the URL endpoint used to create a directory.  
 
@@ -192,6 +199,8 @@ let subaccount3 = await createSubaccountInDirectory(directory, {
 });
 ```  
 
+**Save your changes**.  
+
 2. The "/submit" endpoint handler should be in the following format:  
 
 <p align="center" width="100%">
@@ -240,6 +249,8 @@ log(`Subaccount creation operation COMPLETED`);
 return subaccount;
 ```  
 
+**Save your changes**.  
+
 4. Back in the [SAP Cloud Platform - Core Service APIs](https://accounts-service.cfapps.eu10.hana.ondemand.com/swagger-index.html), in the **Accounts** service tile, open the **Subaccount Operations** group and locate the API’s URL endpoint to create a subaccount.  
 
 <p align="center" width="100%">
@@ -282,6 +293,8 @@ await entitleSubaccount(subaccount3, {
 });
 ```  
 
+**Save your changes**.  
+
 2. Implement the **entitleSubaccount()** function.  
 Locate the function in the server.js file, copy the below code snippet, and paste it instead of the comment: “PLACE CODE FOR SUBACCOUNT ENTITLEMENT HERE”.  
 This function executes a PUT request to SAP Cloud Platform to start an async operation that assigns the two following service plans to every subaccount:  
@@ -318,6 +331,8 @@ log(`Entitled subaccount. Waiting for completion...`);
 await pollForCompletion(`${ENTITLEMENTS_SERVICE_URL}${response.headers['location']}`);
 log(`Entitlement job COMPLETED`);
 ```  
+
+**Save your changes**.  
 
 3. **Your entitleSubaccount() function is ready!**  
 
