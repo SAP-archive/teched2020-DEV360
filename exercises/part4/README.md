@@ -12,6 +12,7 @@ Each of the subaccounts will have its own entitlements and custom properties.
 </p>  
 
 2. The application will display its progress in the page so you can verify all subaccounts were created successfully.  
+Verify you see the **"Flow completed successfully!”** message.  
 
 <p align="center" width="100%">
   <img src="/exercises/part4/images/runtime_log.png" width="70%"/>
