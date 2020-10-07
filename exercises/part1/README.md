@@ -10,7 +10,8 @@ So that an application can consume services, you should first make sure the rele
 
 ## 1. View your Global Account Details
 
-In this section, you will work with the CLI for SAP Cloud Platform to get the information about your global account.
+In this section, you will work with the **CLI for SAP Cloud Platform** to get the information about your Trial global account.  
+If not already done, [Get a Free Trial Account on SAP Cloud Platform](https://developers.sap.com/tutorials/hcp-create-trial-account.html) (steps 1-6).
 
 1. Open the [SAP Cloud Platform Trial landing page](https://cockpit.hanatrial.ondemand.com/cockpit#/home/trial).  
 <p align="center" width="100%">
@@ -43,7 +44,7 @@ sapcp --help
 ./sapcp --help
 ```  
 
-5. **Log in** with the server URL of the landscape (replace the **\<region\>** with the region of your trial account – eu10/us10).  
+5. **Log in** with the server URL of the landscape, using your SAP Cloud Platform credentials (replace the **\<region\>** with the region of your trial account, e.g., eu10, us10).  
 Enter your **global account subdomain** (see image below), **email**, and **password** when prompted.  
 
 ```
@@ -87,7 +88,7 @@ In this section, you will work with the CLI for SAP Cloud Platform to create a s
 1. Create a new subaccount named Dev.  
    Replace the **<new_subdomain>** with a value of your choice.  
    **Note:** A subdomain can contain letters (a-z), digits (0-9), and hyphens only.  
-   Replace the **\<region\>** with the region of your global account (eu10 / us10).  
+   Replace the **\<region\>** with the desired region, e.g., eu10, us10.  
    
 ```
 sapcp create accounts/subaccount --region <region> --display-name Dev --subdomain <new_subdomain>
