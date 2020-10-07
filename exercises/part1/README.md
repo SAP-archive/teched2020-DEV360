@@ -173,7 +173,7 @@ Replace the **<new_subaccount_id>** with the ID of your new subaccount.
 sapcp list accounts/entitlement -sa <new_subaccount_id>
 ```
 
-6. Refresh the **Entity Assignments** screen in the cockpit to view the new assigned entitlements.
+6. Refresh the **Entity Assignments** screen in the cockpit, and select your subaccount to view the new assigned entitlements.
 
 
 ## Summary
