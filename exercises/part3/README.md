@@ -42,7 +42,11 @@ In this section, you will set up your workspace on SAP Business Application Stud
    <img src="/exercises/part3/images/trial_landing_page_bas.png" width="60%"/>
 </p>  
 
-If prompted with this screen, click **OK**.
+If prompted with this screen, click **OK**.  
+
+<p align="center" width="100%">
+   <img src="/exercises/part3/images/bas_consent.png" width="60%"/>
+</p>  
 
 2. Create a new Dev Space of type **Basic**.  
 Enter a name for your space. There's no need to select any extension.
@@ -271,10 +275,11 @@ Subaccounts can be entitled to the services that are visible in the global accou
 Each service can have one or more plans, and these plans need to be assigned to the subaccounts.  
   
 In this section, you will implement the “entitleSubaccount()” function to assign entitlements to each subaccount that you’ve created.  
+As an example, we will assign the **Application Runtime**, and **Document Translation** services.  
 
 1. Copy and paste these 3 function calls into the "/submit" endpoint handler, after the call to create the third subaccount in a directory.  
 These calls will entitle the 3 subaccounts to the **Application Runtime**, and **Document Translation** services.  
-**Remember:** Initially our trial subaccount was entitled with **4 units** of Application Runtime, MEMORY plan. Then we assigned trial with 0 units. This leaves us with 4 units to assign to our dev, test and prod subaccounts.  
+**Remember:** Initially our trial subaccount was entitled with **4 units** of Application Runtime, MEMORY plan. Then we assigned *trial* with 0 units. This leaves us with 4 units to assign to our dev, test and prod subaccounts.  
 
 ```javascript
 await entitleSubaccount(subaccount1, {
