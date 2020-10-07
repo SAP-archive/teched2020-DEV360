@@ -17,7 +17,7 @@ In this section, you will work with the CLI for SAP Cloud Platform to get the in
    <img src="/exercises/part1/images/trial_landing_page.png" alt="Trial Landing Page" width="600"/>
 </p>
 
-2. If not already done, download the CLI for SAP Cloud Platform (latest version for your operating system).  
+2. If not already done, download the **CLI for SAP Cloud Platform** (latest version for your operating system).  
 Unpack the archive and copy the client file (for example, sapcp.exe) to your local system.  
 Open the directory with the client file in the **Windows Command Prompt (CMD)** or **Terminal** for Mac.  
 
@@ -25,16 +25,22 @@ Open the directory with the client file in the **Windows Command Prompt (CMD)** 
    <img src="/exercises/part1/images/trial_landing_page_cli.png" width="60%"/>
 </p>
 
-3. If not already done, create your Trial account.  
+3. Enter your Trial account.  
 
 <p align="center" width="100%">
    <img src="/exercises/part1/images/trial_landing_page_enter.png" width="60%"/>
 </p>
 
-4. In the **Windows Command Prompt (CMD)** or **Terminal** for Mac, type the following command to explore all the available commands in the CLI for SAP Cloud Platform.
+4. In the **Windows Command Prompt (CMD)** or **Terminal** for Mac, type the following command to explore all the available commands in the CLI for SAP Cloud Platform.  
 
 ```
 sapcp --help
+```  
+
+**Note:** Mac users that haven't configured an alias would need to execute each command with a prefix of "./", e.g.,
+
+```
+./sapcp --help
 ```  
 
 5. **Log in** with the server URL of the landscape (replace the **\<region\>** with the region of your trial account – eu10/us10).  
@@ -147,7 +153,7 @@ sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --
 
 5. Free the quota of the **Application Runtime** service assigned to the *“trial”* subaccount, which gets all the quota assigned to it by default (4 units).  
 This is required for PART 3 of this exercise.  
-Locate the subaccount ID of the *“trial”* subaccount which can be derived in multiple ways, one of them is via the “info” button in the cockpit.  
+Locate the subaccount ID of the *“trial”* subaccount. You can copy it from the response of the command you executed in section 2, step 3, or get it via the “info” button in the cockpit.  
 
 <p align="center" width="100%">
    <img src="/exercises/part1/images/cockpit_get_subaccount_id.png" width="60%"/>
