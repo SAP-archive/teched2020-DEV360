@@ -45,7 +45,7 @@ In this section, you will set up your workspace on SAP Business Application Stud
 If prompted with this screen, click **OK**.  
 
 <p align="center" width="100%">
-   <img src="/exercises/part3/images/bas_consent.png" width="60%"/>
+   <img src="/exercises/part3/images/bas_consent.png" width="80%"/>
 </p>  
 
 2. Create a new Dev Space of type **Basic**.  
