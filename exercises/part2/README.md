@@ -19,9 +19,8 @@ In this section, you will use the CLI for SAP Cloud Platform to obtain the authe
 Replace the **<new_subaccount_id>** with the ID of your new subaccount.
 **Note:** *cis-central-instance* is the name for the new instance.  
 
-**TBD**
 ```
-sapcp create services/instance -sa <new_subaccount_id>
+sapcp create services/instance --name cis-central-instance --offering-name cis --plan-name central -sa <new_subaccount_id>
 ```
 
 2. Create a **Binding** for the instance.  
@@ -29,17 +28,15 @@ Bindings generate credentials to use service instances.
 Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
 **Note:** *cis-central-binding* is the name for the binding.  
 
-**TBD**
 ```
-sapcp create services/binding -sa <new_subaccount_id>
+sapcp create services/binding --name cis-central-binding --instance-name cis-central-instance -sa <new_subaccount_id>
 ```  
 
 3. Get the content of the binding you created.  
-Replace the **<new_subaccount_id>** with the ID of your new subaccount.
+Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
 
-**TBD**
 ```
-sapcp get services/binding -sa <new_subaccount_id>
+sapcp get services/binding --name cis-central-binding -sa <new_subaccount_id>
 ```  
 
 4. Extract the values from the binding for the following parameters:  
