@@ -90,7 +90,7 @@ If for any reason, dragging and dropping the folder doesn't work for you, import
 
 8. Locate the set of the configuration constants.  
 Fill in the values for the **CLIENT_ID**, **CLIENT_SECRET**, and **AUTH_URL** using the values obtained from the Binding (Part 2, Section 1, Step 4).  
-Fill in the values for the **USER_EMAIL** and **PASSWORD** with your SAP CP credentials.  
+Fill in the values for the **USER_EMAIL** and **PASSWORD** with your SAP Cloud Platform credentials.  
 Fill in the values for the **REGION** with the region of your Trial account (eu10 / us10). Make sure you fill it in **all 3 locations**.  
 **Save your changes**.  
 
