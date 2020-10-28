@@ -118,7 +118,7 @@ sapcp list accounts/subaccount
 In this section, you will work with the CLI for SAP Cloud Platform to assign service entitlements to your new subaccount.  
   
 You will assign these services to the subaccount:
-* **Cloud Management (cis)**: Manages SAP CP core entities such as accounts and entitlements. Assigning entitlements to CIS allows access to the SAP CP APIs.
+* **Cloud Management (cis)**: Manages SAP Cloud Platform core entities such as accounts and entitlements. Assigning entitlements to CIS allows access to the SAP Cloud Platform APIs.
 * **Usage Data Management (uas)**: Gathers, stores, and exposes usage information for services and applications in all regions in a cloud deployment, for the purpose of central analysis, reporting, and license auditing.  
   
 **Note:** Usage Data Management will be used later in PART 5: RETRIEVE USAGE INFORMATION.
