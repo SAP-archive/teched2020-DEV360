@@ -138,7 +138,7 @@ In this section, you will work with the **SAP Cloud Platform - Core Service APIs
 
 1. Execute the following cURL command in the Windows command prompt (CMD), or Terminal for Mac OS.  
 **Note:** replace **\<clientid\>**, **\<clientsecret\>** and **\<url\>** with the values you obtained in this part, section 1, step 4.  
-Replace **\<user email\>** and **\<password\>** with your SAP CP credentials.  
+Replace **\<user email\>** and **\<password\>** with your SAP Cloud Platform credentials.  
 **IMPORTANT: Make sure to remove any trailing spaces**.  
 
 ```
