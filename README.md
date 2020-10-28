@@ -77,9 +77,6 @@ You will use your Trial account.
 - [PART 4: USE THE NEW APPLICATION IN A PRODUCTION SCENARIO](exercises/part4/README.md)
 - [PART 5: RETRIEVE USAGE INFORMATION](exercises/part5/README.md)
 
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
 
 ## How to obtain support
 
