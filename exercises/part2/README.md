@@ -53,7 +53,7 @@ sapcp get services/binding --name cis-central-binding -sa <new_subaccount_id>
 5. Execute the following cURL command in the Windows command prompt (CMD), or Terminal for Mac OS.
    
    **Note:** replace **\<clientid\>**, **\<clientsecret\>** and **\<url\>** with the values you obtained in the previous step.
-   Replace **\<user email\>** and **\<password\>** with your SAP CP credentials.
+   Replace **\<user email\>** and **\<password\>** with your SAP Cloud Platform credentials.
    
    **IMPORTANT: Make sure to remove any trailing spaces.**  
 
