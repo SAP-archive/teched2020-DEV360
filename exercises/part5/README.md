@@ -220,16 +220,26 @@ Click **Execute**.
 
 10. The results are presented in the **Response body**.  
 
-**TBD screenshot**  
+<p align="center" width="100%">
+  <img src="/exercises/part5/images/get_monthly_usage_response.png" width="60%"/>
+</p>    
 
 11. You should see a section per service, and the usage is presented in the “usage” field.  
 
-**TBD screenshot**  
+<p align="center" width="100%">
+  <img src="/exercises/part5/images/get_monthly_usage_response_explained.png" width="60%"/>
+</p>      
 
 12. The usage information is also presented in the cockpit.  
 Enter your global account’s **Usage Analytics** view.  
 
-**TBD screenshot**  
+<p align="center" width="100%">
+  <img src="/exercises/part5/images/service_usage.png" width="60%"/>
+</p>  
+
+<p align="center" width="100%">
+  <img src="/exercises/part5/images/subaccount_usage.png" width="60%"/>
+</p>  
 
 
 ## Congratulations! You have completed the exercise.
