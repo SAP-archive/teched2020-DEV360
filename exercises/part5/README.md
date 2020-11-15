@@ -101,7 +101,7 @@ Enter the subaccount, and the **Services > Service Marketplace**.
 * identityzone  
 
 9. Open the [Document Translation service’s page](https://api.sap.com/api/documenttranslation/resource) on **SAP API Business Hub** and **Log On**.  
-Click on **Configure Environments**.  
+Click on the Configure Environments button.  
 
 <p align="center" width="100%">
    <img src="/exercises/part5/images/api_hub_configure_environments.png" width="60%"/>
