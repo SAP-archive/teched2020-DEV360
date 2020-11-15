@@ -14,27 +14,24 @@ In this section, you will use the CLI for SAP Cloud Platform to obtain the requi
 Replace the **\<new_subaccount_id\>** with the ID of your new subaccount.  
 **Note:** uas-instance is the name for the new instance.  
 
-**TBD**
 ```
-sapcp create services/instance -sa <new_subaccount_id>
+sapcp create services/instance --name uas-instance --offering-name uas --plan-name reporting-ga-admin -sa <new_subaccount_id>
 ```  
 
 2. Create a **Binding**.  
 Bindings generate credentials to use service instances.  
 Replace the **\<new_subaccount_id\>** with the ID of your subaccount.  
 **Note:** uas-binding is the name for the binding.  
-
-**TBD**  
+ 
 ```
-sapcp create services/binding -sa <new_subaccount_id>
+sapcp create services/binding --name uas-binding --instance-name uas-instance -sa <new_subaccount_id>
 ```  
 
 3. Get the content of the binding you created.    
 Replace the **\<new_subaccount_id\>** with the ID of your new subaccount.
-   
-**TBD**  
+    
 ```
-sapcp get services/binding -sa <new_subaccount_id>
+sapcp get services/binding --name uas-binding -sa <new_subaccount_id>
 ```  
 
 4. Extract the values from the binding for the following parameters:  
