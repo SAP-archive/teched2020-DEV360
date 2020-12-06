@@ -11,12 +11,14 @@ You will perform the following steps:
 In this section, you will use the CLI for SAP Cloud Platform to obtain the required information to authenticate to the **Usage Data Management (uas)** service so that you can use the Usage Data Management REST APIs. You will use the subaccount created in [PART 1](/exercises/part1/README.md).  
 
 1. In your subaccount, create an instance of the **Usage Data Management (uas)** service, **reporting-ga-admin** plan.  
-Replace the **\<new_subaccount_id\>** with the ID of your new subaccount.  
+Replace the **\<new_subaccount_id\>** with the ID of your subaccount.  
 **Note:** uas-instance is the name for the new instance.  
 
 ```
 sapcp create services/instance --name uas-instance --offering-name uas --plan-name reporting-ga-admin -sa <new_subaccount_id>
 ```  
+
+**Note:** if your login session has expired, login again.  
 
 2. Create a **Binding**.  
 Bindings generate credentials to use service instances.  
