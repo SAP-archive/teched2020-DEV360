@@ -96,7 +96,7 @@ curl -L -X POST '<url>/oauth/token' \
 
 ## 2. Try Out the API for Viewing Information About Subaccounts
 
-In this section, you will work with the **SAP Cloud Platform - Core Service APIs** (based on Swagger) and view information about the subaccounts in your trial global account.
+In this section, you will work with the **SAP Cloud Platform - Core Service APIs** (based on Swagger) and view information about the subaccounts in your trial global account. Soon the Swagger will be replaced by SAP API Business Hub.
 
 1. From the [Trial Landing Page](https://cockpit.hanatrial.ondemand.com/cockpit#/home/trial), open the SAP Cloud Platform - Core Service APIs.  
 
