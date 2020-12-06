@@ -75,7 +75,7 @@ Enter a name for your space. There's no need to select any extension.
 
 6. To use the starter application, you need to add it to your workspace.  
 Download the “cei-demo-master” folder from [here](https://sap-my.sharepoint.com/:f:/p/michal_keidar/EpmsN58JG-5KlfCMf0ql7XsBxpgJEYq9YGGIhIVPVOJa2A?e=HuO3Fl).  
-**Drag and drop** the "cei-demo-master" folder to your SAP Business Application Studio workspace.  
+Extract the ZIP file, and then **Drag and drop** the "cei-demo-master" folder to your SAP Business Application Studio workspace.  
 If for any reason, dragging and dropping the folder doesn't work for you, import them manually to your workspace.  
   
 <p align="center" width="100%">
