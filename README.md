@@ -54,7 +54,7 @@ The stakeholders are divided into three main groups:
 3. **Subaccount administrator and developer**
     * Responsible for a directory or subaccount administration 
     * Assigns user rights to other developers
-    * Uses development tools and CLI to develop and debug various applications (Git, SAP Application Studio, S/4 Cloud SDK, SAP Rapid Application Studio, MTA builder and deployer, etc.)
+    * Uses development tools and CLI to develop and debug various applications (Git, SAP Business Application Studio, S/4 Cloud SDK, MTA builder and deployer, etc.)
     * Integrates SAP Cloud Platform business services and technical resources (e.g., databases)
     * May programmatically interact with SAP Cloud Platform using the SAP Cloud Platform REST APIs
     * Uses dev, test, staging and productive subaccounts to test and to deploy applications
