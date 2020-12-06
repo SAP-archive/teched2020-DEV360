@@ -146,7 +146,7 @@ sapcp assign accounts/entitlement --for-service cis --plan central --enable --to
 Replace the **<new_subaccount_id>** with the ID of your new subaccount.  
 
 ```
-sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --enable --to-subaccount <new_subaccount_id>
+sapcp assign accounts/entitlement --for-service uas --plan reporting-ga-admin --amount 5 --to-subaccount <new_subaccount_id>
 ```
 
 <p align="center" width="100%">
