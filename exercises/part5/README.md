@@ -30,7 +30,7 @@ sapcp create services/binding --name uas-binding --instance-name uas-instance -s
 ```  
 
 3. Get the content of the binding you created.    
-Replace the **\<new_subaccount_id\>** with the ID of your new subaccount.
+Replace the **\<new_subaccount_id\>** with the ID of your subaccount.
     
 ```
 sapcp get services/binding --name uas-binding -sa <new_subaccount_id>
@@ -54,7 +54,7 @@ The **Document Translation** service, **trial** plan, provides an API that allow
 In this section, you will use the SAP Cloud Platform cockpit to create usage for this service, that will later be retrieved using the API.  
 **Note:** the **Document Translation** service, **trial** plan, is offered on **EU10 region only**, so you must use a subaccount on EU10. If you don't have one, create it.
 
-1. Back in the cockpit, choose any subaccount on the EU10 region, and verify it is assigned with quota of the **Document Translation** service, **trial** plan.  
+1. Back in the cockpit, choose any subaccount **on the EU10 region**, and verify it is assigned with quota of the **Document Translation** service, **trial** plan.  
 Enter the subaccount, and the **Services > Service Marketplace**.    
 
 <p align="center" width="100%">
