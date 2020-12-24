@@ -1,5 +1,7 @@
 # DEV360 - Explore the new capabilities of SAP Cloud Platform - Open API and CLI
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-DEV360)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-DEV360)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session DEV360 - Explore the new capabilities of SAP Cloud Platform - Open API and CLI. 
